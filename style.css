@@ -1,0 +1,81 @@
+/*GLOBAL VARIABLES*/
+:root {
+    --background: #ffffff;
+    --green-line: #8bccb0; 
+    --header-color: #000000;
+    --text-color: #0a0508;
+}
+
+/*CORE STYLES*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--background);
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--header-color);
+    letter-spacing: 5px;
+}
+
+
+.green-line {
+    width: 100%;
+    height: 6px;
+    margin: 2rem 0;
+    background-color: var(--green-line);
+}
+
+/*MAIN WRAPPER*/
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 2rem;
+}
+
+/*HEADER*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.header__logo {
+    width: 60px;
+    height: 60px;
+}
+
+/*NAVIGATION*/
+.navigation__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.navigation__ul li a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: var(--text-color);
+}
+
+/*HERO*/
+.hero-wrapper {
+    width: 100%;
+}
+
+.hero {
+    max-width: 100%;
+}
